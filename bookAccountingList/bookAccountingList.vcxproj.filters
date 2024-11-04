@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\logics">
+      <UniqueIdentifier>{aae788db-97e4-4cfa-8921-5bfdc4dab3c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\compound">
+      <UniqueIdentifier>{79fc785b-3da2-40a3-9900-eed957646a42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\executionOfLogic">
+      <UniqueIdentifier>{9c024c8d-eb9a-4d51-9924-e40d9c2ba6c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\database">
+      <UniqueIdentifier>{e8a54abe-f4bf-4cad-a4c3-a610f7a6d55d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\database">
+      <UniqueIdentifier>{5c94a3df-a26c-42ea-b690-33d535667e16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bookAccountingList.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="addBook.cpp">
+      <Filter>Исходные файлы\executionOfLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="DB.cpp">
+      <Filter>Исходные файлы\database</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="addingBooks.h">
+      <Filter>Файлы заголовков\logics</Filter>
+    </ClInclude>
+    <ClInclude Include="connect.h">
+      <Filter>Файлы заголовков\compound</Filter>
+    </ClInclude>
+    <ClInclude Include="mainConnection.h">
+      <Filter>Файлы заголовков\compound</Filter>
+    </ClInclude>
+    <ClInclude Include="DB.h">
+      <Filter>Файлы заголовков\database</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
