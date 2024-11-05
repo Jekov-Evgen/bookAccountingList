@@ -138,7 +138,6 @@
     <ClCompile Include="DB.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="addingBooks.h" />
     <ClInclude Include="connect.h" />
     <ClInclude Include="DB.h" />
     <ClInclude Include="mainConnection.h" />

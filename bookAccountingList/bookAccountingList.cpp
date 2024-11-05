@@ -4,6 +4,9 @@
 #include "mainConnection.h"
 
 void examination();
+int enteringTheYear();
+std::string authorInput();
+std::string enteringBookTitle();
 
 int main()
 {
@@ -11,6 +14,7 @@ int main()
 
     std::string input;
     std::map<std::string, int> command;
+    DataBase storage;
 
     command["add"] = 1;
     command["del"] = 2;
@@ -30,17 +34,27 @@ int main()
         }
 
         switch (command[input]) {
-        case 1:
-            std::cout << "Добавление книги" << std::endl;
+        case 1: {
+            int year = enteringTheYear();
+            std::string author = authorInput();
+            std::string nameBook = enteringBookTitle();
+
+            storage.addBook(author, year, nameBook);
             break;
-        case 2:
-            std::cout << "Удаление книги" << std::endl;
+        }
+        case 2: {
+            std::string nameBook = enteringBookTitle();
+
+            storage.delBook(nameBook);
+
             break;
+        }
         case 3:
-            std::cout << "Просмотр всех книг" << std::endl;
+            storage.allBook();
             break;
         case 4:
-            std::cout << "Очистка списка книг" << std::endl;
+            storage.clearDB();
+            break;
         default:
             std::cout << "Неверный ввод" << std::endl;
             break;
@@ -65,4 +79,33 @@ void examination() {
     std::cout << "clear(Очитска)" << std::endl;
     std::cout << "exit(Выход)" << std::endl;
     std::cout << "help(Список команд)" << std::endl;
+}
+
+int enteringTheYear()
+{
+    int y = 0;
+    std::cout << "Введите год издания: ";
+    std::cin >> y;
+
+    return y;
+}
+
+std::string authorInput()
+{
+    std::string a = "";
+
+    std::cout << "Введите автора: ";
+    std::cin >> a;
+
+    return a;
+}
+
+std::string enteringBookTitle()
+{
+    std::string nb = "";
+
+    std::cout << "Введите книгу: ";
+    std::cin >> nb;
+
+    return nb;
 }

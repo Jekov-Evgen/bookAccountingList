@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Файлы заголовков\logics">
-      <UniqueIdentifier>{aae788db-97e4-4cfa-8921-5bfdc4dab3c1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Файлы заголовков\compound">
       <UniqueIdentifier>{79fc785b-3da2-40a3-9900-eed957646a42}</UniqueIdentifier>
     </Filter>
@@ -41,9 +38,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="addingBooks.h">
-      <Filter>Файлы заголовков\logics</Filter>
-    </ClInclude>
     <ClInclude Include="connect.h">
       <Filter>Файлы заголовков\compound</Filter>
     </ClInclude>
